@@ -57,12 +57,6 @@ figcaption {
  * ----------------------------------------------------------------------------
  */
 
- .top-bar-container {
- 	.title-area {
- 		display: none;
- 	}
- }
-
  .top-bar {
  	.divider {
  		display: none;
@@ -99,6 +93,29 @@ figcaption {
  	}
  }
 
+ .off-canvas-list li a {
+ 	font-family: $header-font-family;
+ 	font-weight: 600;
+ 	font-size: 1.25rem;
+ }
+
+ section.middle.tab-bar-section h1, .top-bar-container .title-area h1 a {
+ 	font-family: $header-font-family;
+ 	font-weight: 600;
+ 	font-size: 2.15rem;
+ 	float: left;
+ 	padding-left: 80px;
+ 	padding-top: 2px;
+ 	background-image: url(http://www.thecodecub.com/wp-content/uploads/2014/08/CodeCubspace.png);
+ 	background-size: contain;
+ 	background-repeat: no-repeat;
+ }
+
+@media only screen and (max-width: 365px) { 
+	section.middle.tab-bar-section h1 {
+		font-size: 1.4rem;
+	}
+}
 
 /**
  * 4.0 Content
