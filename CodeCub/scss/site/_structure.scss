@@ -57,7 +57,47 @@ figcaption {
  * ----------------------------------------------------------------------------
  */
 
-// Insert styles here
+ .top-bar-container {
+ 	.title-area {
+ 		display: none;
+ 	}
+ }
+
+ .top-bar {
+ 	.divider {
+ 		display: none;
+ 	}
+ 	ul li a {
+ 	font-family: $header-font-family;
+ 	font-weight: 600;
+ 	font-size: 1.45rem;
+ 	}
+ }
+
+ #menu-top-left {
+ 	width: auto;
+ 	max-height: 99%;
+ 	position: relative;
+ 	display: block;
+ 	a {
+ 		background:  $topbar-bg-color;
+ 	}
+ }
+
+#menu-item-16 img {
+ 	width: auto;
+ 	max-height: 100%;
+ 	display: block;
+ }
+
+ #menu-item-19 {
+ 	padding-left: 0;
+ 	margin-left: -10px;
+ 	a {
+ 		font-size: 2.3rem;
+ 		padding-left: 0;
+ 	}
+ }
 
 
 /**
@@ -98,7 +138,9 @@ figcaption {
 	 * ------------------------------------
 	 */
 
-	// Insert styles here
+	section.container {
+		background: #FFF;
+	}
 
 
 	/**
