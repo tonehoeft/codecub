@@ -5,12 +5,21 @@
 
 $body-bg: #FFF;
 
-$topbar-bg-color: #0F277F;
+$primary-color: #152e8a;
+$secondary-color: #1078E8;
+$info-color: #11C2FF;
 
-$topbar-link-bg-active: #1078E8;
-$topbar-link-bg-active-hover: #11C2FF;
-$topbar-link-bg-hover: #11C2FF;
+$topbar-bg-color: $primary-color;
 
-$tabbar-bg: #0F277F;
-$off-canvas-bg: #1078E8;
+$topbar-link-bg-active: $secondary-color;
+$topbar-link-bg-active-hover: $info-color;
+$topbar-link-bg-hover: $info-color;
+
+$tabbar-bg: $primary-color;
+$off-canvas-bg: $secondary-color;
 $off-canvas-link-color: #FFF;
+
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: $secondary-color;
+
+$button-function-factor: 15%;
