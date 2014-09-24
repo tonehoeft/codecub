@@ -23,3 +23,32 @@ $anchor-font-color: $primary-color;
 $anchor-font-color-hover: $secondary-color;
 
 $button-function-factor: 15%;
+
+$select-bg-color: #e6eafa;
+$select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+
+  /* Firefox 3.6+ */
+  background-color: -moz-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Safari 4+, Chrome 1+ */
+  background-color: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background-color: -webkit-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Opera 11.10+ */
+  background-color: -o-linear-gradient(left, $from 0%, $to $stop);
+
+  /* IE10+ */
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Standard */
+  background: linear-gradient(to right, $from 0%, $to $stop);
+
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}

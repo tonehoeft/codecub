@@ -150,6 +150,61 @@ body section.container {
 			display: none;
 		}
 
+		#projectselect {
+			margin-bottom: -10px;
+		}
+
+		.tilewrapper {
+			width: 100%;
+		}
+
+		.tiles {
+			position: relative;
+			max-width: 99%;
+			display: inline;
+			text-align: center;
+			img {
+				max-width: 99%;
+				padding-bottom: 15px;
+			}
+			a:hover img {
+				opacity: 0.5;
+			}
+		}
+
+		.tile {
+			max-width: 150px;
+			display: inline;
+			float: left;
+			margin: 0 15px 0 15px;
+		}
+
+		.tilewrapper h5, .tilewrapper p, .tiledescrip {
+			text-align: center;
+		}
+
+		@media only screen and (max-width: 650px) { 
+			.tile {
+				max-width: 125px;
+				h5 {
+				}
+				p {
+				}
+			}
+		}
+
+		@media only screen and (max-width: 365px) { 
+			.tile {
+				max-width: 100px;
+				h5 {
+					font-size: 1.1rem;
+				}
+				p {
+					font-size: 1.1rem;
+				}
+			}
+		}
+
 		//Blog
 
 		body.blog, body.category {
