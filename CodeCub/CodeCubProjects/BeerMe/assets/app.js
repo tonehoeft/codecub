@@ -140,12 +140,14 @@ $(document).ready(function () {
 
                 $("#recs").show(300);
                 $("#questions").hide(300);
+                window.scrollTo(0,0);
             });
     });
 
     $("#continue").on("click", function () {
         $("#recs").hide(300);
         $("#questions").show(300);
+        window.scrollTo(0,0);
     });
 
     $("#recs").hide();
