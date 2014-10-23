@@ -1,0 +1,518 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+body {
+  width: 100%;
+  background: #dea600 url("beerback.jpg") repeat-x center center;
+  background-attachment: fixed; }
+
+h1, h2, h3 {
+  font-family: "Oswald", Helvetica, sans-serif;
+  color: #f9f9f9; }
+
+h1 {
+  font-size: 7.0em;
+  line-height: 10%;
+  color: #f3f3f3; }
+
+h3 {
+  font-size: 2.0em;
+  margin-top: 0px;
+  margin-bottom: -5px; }
+
+h4 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #f9f9f9;
+  font-size: 1.5em;
+  font-weight: 500; }
+
+p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #f9f9f9;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 300; }
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em; }
+
+#mainContainer {
+  max-width: 800px;
+  margin: 100px auto 50px auto;
+  background: #eabf34;
+  border: 15px solid #e4831c;
+  border-radius: 25px;
+  padding: 0 50px 0 50px; }
+
+#topRow {
+  text-align: center; }
+
+.beerLogo {
+  max-width: 30%;
+  display: inline-block;
+  margin: -100px 0 0 -25px; }
+
+.beerTitle {
+  display: inline-block; }
+
+.intro {
+  margin-top: 0px; }
+
+select {
+  width: 100%; }
+
+.customSelect {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  background: #f9f9f9 url("arrow.jpg") right center no-repeat;
+  background-size: contain;
+  color: #1e1e1e;
+  padding: 3px 9px;
+  width: 500px;
+  border-radius: 10px; }
+
+.customSelect.customSelectHover {
+  margin: -3px 0 -3px -3px;
+  border: 3px solid #e4831c; }
+
+#recs img {
+  float: left;
+  padding: 0 15px 0 0;
+  border-radius: 5px;
+  line-height: 1.4; }
+#recs h4 {
+  clear: left;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+#recs p {
+  margin-top: -7px; }
+#recs a {
+  color: #f9f9f9; }
+  #recs a:hover {
+    color: #e4831c; }
+
+#rec1 div {
+  height: 100%;
+  clear: left;
+  position: relative;
+  display: block; }
+#rec1 p {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+#spacer {
+  width: 100%;
+  clear: left;
+  display: block; }
+
+#submitButton, #tryAgain, #error {
+  text-align: center;
+  padding-bottom: 25px; }
+
+#tryAgain {
+  margin-top: 50px;
+  clear: left; }
+  #tryAgain p {
+    font-weight: 400;
+    margin-bottom: -10px; }
+
+#beersubmit, #continue {
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: none;
+  border: none;
+  background: #e4831c;
+  color: #f9f9f9;
+  margin: 30px auto 0 auto; }
+  #beersubmit:hover, #continue:hover {
+    cursor: pointer;
+    border: 3px solid #f9f9f9;
+    margin: 27px auto -3px auto; }
+  #beersubmit:active, #continue:active {
+    background: #eabf34; }
+  #beersubmit:focus, #continue:focus {
+    outline: 0; }
+
+@media (max-width: 1014px) {
+  #mainContainer {
+    max-width: 700px; }
+
+  .beerLogo {
+    max-width: 25%;
+    margin: -125px 0 0 -40px; }
+
+  .intro {
+    margin-top: 5px; }
+
+  h1 {
+    font-size: 6.0em; }
+
+  p {
+    font-size: 1.15em; }
+
+  h3 {
+    font-size: 1.8em; }
+
+  h4 {
+    font-size: 1.4em; } }
+@media (max-width: 888px) {
+  #mainContainer {
+    max-width: 600px; }
+
+  .beerLogo {
+    margin: -200px 0 0 -30px; }
+
+  h1 {
+    font-size: 5.7em; }
+
+  #rec1 p {
+    font-size: 1.05em; }
+
+  #beersubmit, #continue {
+    font-size: 1.1em; } }
+@media (max-width: 783px) {
+  #mainContainer {
+    max-width: 500px;
+    margin: 50px auto 50px auto; }
+
+  h1 {
+    font-size: 5.0em; }
+
+  p {
+    font-size: 1.05em; }
+
+  h2 {
+    font-size: 1.3em; }
+
+  .customSelect {
+    font-size: 1.0em; }
+
+  h3 {
+    font-size: 1.6em; }
+
+  h4 {
+    font-size: 1.2em; } }
+@media (max-width: 699px) {
+  #mainContainer {
+    max-width: 400px;
+    margin: 50px auto 50px auto; }
+
+  .beerLogo {
+    max-width: 30%;
+    margin: -125px 0 0 -20px; }
+
+  h1 {
+    font-size: 4.5em; }
+
+  p, #rec1 p {
+    font-size: 1.0em; }
+
+  h2 {
+    font-size: 1.15em; }
+
+  .customSelect {
+    width: 350px; }
+
+  h3 {
+    font-size: 1.4em;
+    margin-top: 5px; } }
+@media (max-width: 599px) {
+  #mainContainer {
+    max-width: 350px;
+    margin: 25px auto 25px auto;
+    border: 10px solid #e4831c; }
+
+  h1 {
+    font-size: 4.0em; }
+
+  h2 {
+    font-size: 1.1em; }
+
+  h3 {
+    font-size: 1.3em; }
+
+  h4 {
+    font-size: 1.1em; } }
+@media (max-width: 519px) {
+  #mainContainer {
+    margin: 50px auto 25px auto;
+    padding: 0 25px 0 25px; }
+
+  .beerLogo {
+    margin: -125px 0 0 -30px; }
+
+  h1 {
+    font-size: 3.25em; }
+
+  .customSelect {
+    width: 300px; }
+
+  #tryAgain {
+    margin-top: 25px; } }
+@media (max-width: 462px) {
+  #mainContainer {
+    max-width: 325px; }
+
+  h1 {
+    font-size: 3.05em; }
+
+  h2 {
+    font-size: 1.0em; }
+
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: -15px;
+    margin-top: 10px; }
+
+  h4 {
+    font-size: 1.0em; }
+
+  .customSelect {
+    font-size: .975em; }
+
+  #beersubmit, #continue {
+    font-size: 1.0em;
+    padding: 8px 10px; } }
+@media (max-width: 426px) {
+  #mainContainer {
+    max-width: 300px;
+    border: 7px solid #e4831c;
+    padding: 0 20px 0 20px;
+    margin: 40px auto 25px auto; }
+
+  .beerLogo {
+    margin: -125px 0 0 -30px; }
+
+  h1 {
+    font-size: 2.9em; }
+
+  h2 {
+    font-size: 1.0em; }
+
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: -15px;
+    margin-top: 10px; }
+
+  h4 {
+    font-size: 1.0em; }
+
+  .customSelect {
+    font-size: .95em;
+    width: 275px; }
+
+  #beersubmit, #continue {
+    font-size: 1.0em;
+    padding: 8px 10px; } }
+@media (max-width: 385px) {
+  #mainContainer {
+    max-width: 250px;
+    padding: 0 20px 0 20px;
+    margin: 30px auto 25px auto; }
+
+  .beerLogo {
+    margin: -125px 0 0 -20px; }
+
+  .intro {
+    margin-top: 0px; }
+
+  h1 {
+    font-size: 2.75em; }
+
+  h2 {
+    font-size: 1.0em; }
+
+  h3 {
+    font-size: 1.2em; }
+
+  h4 {
+    font-size: 1.0em; }
+
+  .customSelect {
+    width: 225px; } }
+@media (max-width: 335px) {
+  #mainContainer {
+    padding: 0 15px 0 15px; } }

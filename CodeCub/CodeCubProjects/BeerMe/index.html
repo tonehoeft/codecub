@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Beer Me! The beer reccomendation app.">
+  <meta name="author" content="Tone Hoeft">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/beer.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Oswald|Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'>
+  <title>Beer Me!</title>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="topRow">
+            <img class="beerLogo" src="assets/beerme.png">
+            <h1 class="beerTitle">Beer Me!</h1>
+        </div>
+
+        <div id="questions">
+
+             <p class="intro">Looking to put back a cold one but not sure what type of beer to drink? Don't worry, we've got you covered with our fail-proof beer recommendation app. Built on years of "professional research" and scientifically proven BeerMath<sup>TM</sup>, we guarantee the perfect beer for you. Just answer our four simple questions, hit the "Beer Me!" button, and you're on your way to finding a better match than you could ever find on Tinder.</p>
+
+            <div id="question1">
+                <h2>Question 1: How are you feeling?</h2>
+
+                <select id="q1" class="styled" name="feeling">
+                    <option value="0">:–D</option>
+                    <option value="1">:-)</option>
+                    <option selected="selected" value="2">:-|</option>
+                    <option value="3">:-(</option>
+                    <option value="4">:'-(</option>
+                </select>
+            </div>
+
+            <div id="question2">
+                <h2>Question 2: How's the weather?</h2>
+
+                <select id="q2" class="styled" name="weather">
+                    <option value="0">I'm literally melting</option>
+                    <option value="1">Bright and sunny</option>
+                    <option value="2">Gloomy...</option>
+                    <option selected="selected" value="3">Chilly and crisp</option>
+                    <option value="4">Winter wonderland</option>
+                    <option value="5">Too cold to type</option>
+                </select>
+            </div>
+
+            <div id="question3">
+                <h2>Question 3: Why are you drinking?</h2>
+
+                <select id="q3" class="styled" name="why">
+                    <option value="0">Let's party bitches!</option>
+                    <option value="1">Day drinking</option>
+                    <option selected="selected" value="2">With a small group of friends</option>
+                    <option value="3">Relaxing at the end of the day</option>
+                    <option value="4">Seriously, don't even talk to me</option>
+                </select>
+            </div>
+
+            <div id="question4">
+                <h2>Question 4: Are you drinking this with food?</h2>
+
+                <select id="q4" class="styled" name="pairing">
+                    <option value="0">No, and I want something refreshing</option>
+                    <option selected="selected" value="5">No, and I want something bold</option>
+                    <option value="1">Yes, with something light</option>
+                    <option value="2">Yes, with a burger</option>
+                    <option value="3">Yes, with something spicy</option>
+                    <option value="4">Yes, with a pot roast or fish fry</option>
+                </select>
+            </div>
+
+            <div id="submitButton">
+                <input type="submit" id="beersubmit" value="Beer Me!"></input>
+            </div>
+        </div>
+
+        <div id="recs">
+            <div id="rec1">
+                <h3>Your perfect beers:</h3>
+                <div id="mainbeer"></div>
+                <div id="spacer"> </div>
+                <div id="beer2"></div>
+                <div id="spacer"> </div>
+                <div id="beer3"></div>
+                <div id="spacer"> </div>
+            </div>
+            <div id="tryAgain">
+                <p>Not liking what you see? Try again!</p>
+                <input type="submit" id="continue" value="Take me back to the questions!"></input>
+            </div>
+        </div>
+
+        <div id="error">
+            <h3> Server too drunk right now to handle your request. Give us some time to walk it off and come back in an hour. </h3>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="assets/jquery-1.11.1.min.js"></script>
+<script src="assets/jquery.customSelect.min.js"></script>
+<script src="assets/app.js"></script>
+
+</html>
