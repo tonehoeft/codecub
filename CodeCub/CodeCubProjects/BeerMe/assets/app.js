@@ -95,7 +95,7 @@ $(document).ready(function () {
         }
         
         $.ajax({
-            url: "http://api.untappd.com/v4/search/beer/method_name?client_id=F91B6AFFAF98FED2BCDE569D9687A8F4C4B2DC34&client_secret=1FC3B2A4CEF8D80BE17E6FB720A9DD12AAD9AD81&q=" + bSearch + "&sort=count",
+            url: "https://api.untappd.com/v4/search/beer/method_name?client_id=F91B6AFFAF98FED2BCDE569D9687A8F4C4B2DC34&client_secret=1FC3B2A4CEF8D80BE17E6FB720A9DD12AAD9AD81&q=" + bSearch + "&sort=count",
             dataType: 'json'
         })
             .error(function (result) {
@@ -108,19 +108,19 @@ $(document).ready(function () {
 
                 do {
                     beer1 = result.response.beers.items[Math.floor(Math.random() * result.response.beers.items.length)];
-                } while (beer1.beer.beer_name.length !== 0 && beer1.beer.beer_description.length < 30 && beer1.beer.beer_label !== "https://d1c8v1qci5en44.cloudfront.net/site/assets/images/temp/badge-beer-default.png");
+                } while (beer1.beer.beer_name.length !== 0 && beer1.beer.beer_description.length < 30 && beer1.beer.beer_label !== "http://d1c8v1qci5en44.cloudfront.net/site/assets/images/temp/badge-beer-default.png");
 
                 beer2 = result.response.beers.items[Math.floor(Math.random() * result.response.beers.items.length)];
 
                 do {
                     beer2 = result.response.beers.items[Math.floor(Math.random() * result.response.beers.items.length)];
-                } while (beer2.beer.beer_name.length !== 0 && beer2.beer.beer_description.length < 30 && beer2.beer.beer_label !== "https://d1c8v1qci5en44.cloudfront.net/site/assets/images/temp/badge-beer-default.png" || beer2 === beer1);
+                } while (beer2.beer.beer_name.length !== 0 && beer2.beer.beer_description.length < 30 && beer2.beer.beer_label !== "http://d1c8v1qci5en44.cloudfront.net/site/assets/images/temp/badge-beer-default.png" || beer2 === beer1);
 
                 beer3 = result.response.beers.items[Math.floor(Math.random() * result.response.beers.items.length)];
 
                 do {
                     beer3 = result.response.beers.items[Math.floor(Math.random() * result.response.beers.items.length)];
-                } while (beer3.beer.beer_name.length !== 0 && beer3.beer.beer_description.length < 30 && beer3.beer.beer_label !== "https://d1c8v1qci5en44.cloudfront.net/site/assets/images/temp/badge-beer-default.png" || beer3 === beer1 || beer3 === beer2);
+                } while (beer3.beer.beer_name.length !== 0 && beer3.beer.beer_description.length < 30 && beer3.beer.beer_label !== "http://d1c8v1qci5en44.cloudfront.net/site/assets/images/temp/badge-beer-default.png" || beer3 === beer1 || beer3 === beer2);
 
                 $("#mainbeer").empty();
                 $("#beer2").empty();
